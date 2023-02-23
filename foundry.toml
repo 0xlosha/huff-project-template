@@ -10,3 +10,11 @@ remappings = [
   "forge-std=lib/forge-std/src/",
   "foundry-huff=lib/foundry-huff/src/",
 ]
+
+# ignore solc warnings
+# 1878 missing license
+# 9302 unused low level return call
+# 5667 unused function parameter
+# 2519 shawdowing
+ignored_error_codes = [1878, 9302, 5667, 2519]
+
